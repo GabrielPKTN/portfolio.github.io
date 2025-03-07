@@ -14,7 +14,7 @@ body{
 }
 
 main.apresentacao{
-    margin: 10%; 
+    margin: 10% 15%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,6 +22,10 @@ main.apresentacao{
 
 section.apresentacao_de_conteudo{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 150px;
 }
 
 h1.titulo{
@@ -51,11 +55,11 @@ a.link_do_botao{
     height: 79px;
     text-align: center;
     font-size: 24px;
-    font-weight: 600px;
     padding: 21.5px;
     text-decoration: none;
     color: black;
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 img{
@@ -64,4 +68,5 @@ img{
     width: auto;
     height: auto;
     border-radius: 10px;
+    margin-right: 150px;
 }
