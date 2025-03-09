@@ -14,27 +14,26 @@ body{
 }
 
 main.apresentacao{
-    margin: 10% 15%; 
+    margin: 8% 15%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 section.apresentacao_de_conteudo{
-    width: 615px;
+    width: 36.9vw;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: 150px;
 }
 
 h1.titulo{
-    font-size: 36px;
+    font-size: 49px;
     font-family: "Krona One", sans-serif;
 }
 
 p.paragrafo_da_apresentacao{
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -60,13 +59,59 @@ a.link_do_botao{
     color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    object-fit: cover;
 }
 
 img{
-    max-width: 420px;
-    max-height: 420px;
+    max-width: 60vw;
+    max-height: 60vh;
     width: auto;
     height: auto;
     border-radius: 20px;
-    margin-right: 150px;
+    object-fit: contain;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1150px){
+    main.apresentacao{
+        height: 100vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    section.apresentacao_de_conteudo{
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1.titulo{
+        font-size: 29px;
+    }
+    p.paragrafo_da_apresentacao{
+        font-size: 22px;
+    }
+    img.foto{
+        width: 38vw;
+        height: 27vh;
+        object-fit: cover;
+    }    
+    div.links{
+        flex-direction: column;
+        gap: 10px;
+    }
+    a.link_do_botao{
+        width: 300px;
+        height: 70px;
+    }
+
 }
