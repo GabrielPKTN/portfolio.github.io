@@ -14,7 +14,7 @@ body{
 }
 
 main.apresentacao{
-    margin: 8% 15%; 
+    margin: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,7 +50,7 @@ div.links{
 a.link_do_botao{
     background-color: #419b18;
     border-radius: 16px;
-    width: 280px;
+    width: 230px;
     height: 79px;
     text-align: center;
     font-size: 24px;
@@ -86,32 +86,42 @@ img{
 
 @media screen and (max-width: 1150px){
     main.apresentacao{
-        height: 100vh;
+        min-height: 100vh;
         flex-direction: column-reverse;
         justify-content: center;
     }
     section.apresentacao_de_conteudo{
         flex-direction: column;
         gap: 20px;
+        max-width: 90%;
+        margin: 0 auto;
     }
     h1.titulo{
-        font-size: 29px;
+        font-size: 14px;
+        text-align: center;
     }
     p.paragrafo_da_apresentacao{
-        font-size: 22px;
+        font-size: 10.5px;
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
     }
-    img.foto{
-        width: 38vw;
-        height: 27vh;
-        object-fit: cover;
-    }    
     div.links{
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
     a.link_do_botao{
-        width: 300px;
-        height: 70px;
+        font-size: 18px;
+        width: 150px;
+        height: 35px;
+        padding: 8px;
+    }
+    img.foto{
+        width: 15vw;
+        height: auto;
+        height: 10vh;
+        object-fit: cover;
     }
 
 }
