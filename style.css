@@ -135,4 +135,10 @@ body{
         gap: 16px;
         
     }
+
+    .img_logos {
+        height: 24px;
+        width: 24px;
+    }
+    
 }
