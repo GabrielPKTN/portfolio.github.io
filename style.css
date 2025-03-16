@@ -13,57 +13,68 @@ body{
     color: white;
 }
 
-main.apresentacao{
+.apresentacao{
     margin: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-section.apresentacao_de_conteudo{
+.apresentacao_de_conteudo{
     width: 36.9vw;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-h1.titulo{
+.titulo{
     font-size: 49px;
     font-family: "Krona One", sans-serif;
 }
 
-p.paragrafo_da_apresentacao{
+.paragrafo_da_apresentacao{
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
 }
 
-strong.destaque_do_titulo{
+.destaque_do_titulo{
     color: #419b18;
 }
 
-div.links{
-    display: flex;
-    justify-content: space-between;
-
+.subtitulo_links {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 24px ;
 }
 
-a.link_do_botao{
-    background-color: #419b18;
-    border-radius: 16px;
-    width: 230px;
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.link_do_botao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;    
+    border: 3px solid #419b18;
+    border-radius: 10px;
+    width: 375px;
     height: 79px;
     text-align: center;
     font-size: 24px;
     padding: 21.5px;
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     object-fit: cover;
 }
 
-img{
-    max-width: 60vw;
+.foto{
+    margin: 50px;
+    max-width: 100%;
     max-height: 60vh;
     width: auto;
     height: auto;
@@ -84,44 +95,44 @@ img{
     }
 }
 
-@media screen and (max-width: 1150px){
-    main.apresentacao{
-        min-height: 100vh;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    section.apresentacao_de_conteudo{
-        flex-direction: column;
-        gap: 20px;
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    h1.titulo{
-        font-size: 14px;
-        text-align: center;
-    }
-    p.paragrafo_da_apresentacao{
-        font-size: 10.5px;
-        max-width: 80%;
-        text-align: center;
-        margin: 0 auto;
-    }
-    div.links{
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-    a.link_do_botao{
-        font-size: 18px;
-        width: 150px;
-        height: 35px;
-        padding: 8px;
-    }
-    img.foto{
-        width: 15vw;
-        height: auto;
-        height: 10vh;
-        object-fit: cover;
+@media screen and (max-width: 1000px){
+
+    .foto {
+        display: none;
     }
 
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .apresentacao {
+        margin: 0;
+    }
+
+    .apresentacao_de_conteudo {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: 2rem;
+        width: 100vw;
+        max-height: 100%;
+        text-align: center;
+    }
+    
+    .paragrafo_da_apresentacao {
+        font-size: 1.2rem;
+        width: 100vw;
+        max-height: 100%;
+        text-align: center;
+    }
+
+    .links {
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        
+    }
 }
