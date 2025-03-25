@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     color: white;
 }
@@ -72,6 +72,10 @@ body{
     object-fit: cover;
 }
 
+.link_do_botao:hover {
+    background-color: #272727;
+}
+
 .foto{
     margin: 50px;
     max-width: 100%;
@@ -80,19 +84,18 @@ body{
     height: auto;
     border-radius: 20px;
     object-fit: contain;
-    animation: float 2s ease-in-out infinite;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); 
-    }
-    100% {
-        transform: translateY(0);
-    }
+.rodape {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    background-color: #419b18;
+    color: #000;
+    
 }
 
 @media screen and (max-width: 1000px){
@@ -102,6 +105,7 @@ body{
     }
 
     body {
+        
         display: flex;
         flex-direction: column;
     }
