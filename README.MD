@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-![](./preview.png)
+![](./img/preview.png)
 
 Portfolio profissional, em desenvolvimento, criado com ambito
 de melhorar minhas habilidades em html e css!
