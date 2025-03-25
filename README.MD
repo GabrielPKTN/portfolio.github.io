@@ -1,6 +1,7 @@
 # PORTFOLIO
 
 ![](./img/preview.png)
+![](./img/preview_about.png)
 
 Portfolio profissional, em desenvolvimento, criado com ambito
 de melhorar minhas habilidades em html e css!
