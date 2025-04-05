@@ -3,8 +3,8 @@
 ![](./img/preview.png)
 ![](./img/preview_about.png)
 
-Portfolio profissional, em desenvolvimento, criado com ambito
-de melhorar minhas habilidades em html e css!
+Portfólio profissional, criado com âmbito
+de melhorar minhas habilidades em HTML e CSS!
 
 ## TECNOLOGIAS
 
