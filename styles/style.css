@@ -95,12 +95,17 @@ body{
     object-fit: cover;
 }
 
+.img_logos {
+    height: 2rem;
+    width: 2rem;
+}
+
 .link_do_botao:hover {
     background-color: #272727;
 }
 
 .foto{
-    width: 50%;
+    width: 30%;
     border-radius: 20px;
 }
 
